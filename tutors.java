@@ -16,30 +16,52 @@ public class tutors {
  public static void main(String[] args){
  Scanner entrada = new Scanner(System.in);
  
- System.out.println("Valor de a: ");
- int a = entrada.nextInt();
- System.out.println("Valor de b: ");
- int b = entrada.nextInt();
- System.out.println(" informe o código. 3, 4 ou 5");
+ int valor = 0;
+ int um = 0;
+ int dois = 0;
+ int tres = 0;
+ int quatro = 0;
+ int cinco = 0;
+ int quant = 0;
+ 
+ System.out.println(" Caneta R$3,00 ");
+ System.out.println(" Lápis R$2,30 ");
+ System.out.println(" Borracha R$ 4,00");
+ System.out.println(" Apontador R$ 4,50");
+ 
+ 
  int codigo = entrada.nextInt();
- int c = 0;
+ 
+ if(quant==1){
+ System.out.println(" Quantidade: ");
+ quant = entrada.nextInt();
  
  switch (codigo){
-     case 3:
-         c= a+b;
-           System.out.println(a=a+ (a*20)/100);
-           System.out.println(" Resultado: " + c);
+     case 1:
+         valor= um + quant;
+           System.out.println(valor+ (valor*20)/100);
+           System.out.println(" Resultado: " + valor);
            
      break;
+     case 2:
+         valor= dois + quant;
+           System.out.println(valor+ (valor*20)/100);
+           System.out.println(" Resultado " + valor);
+     break;
+     case 3:
+         valor= tres + quant;
+           System.out.println(valor+ (valor*20)/100);
+           System.out.println(" Resultado " + valor);
+     break;
      case 4:
-         c= a+b;
-           System.out.println(a=a+ (a*20)/100);
-           System.out.println(" Resultado " + c);
+         valor= quatro + quant;
+           System.out.println(valor (valor*20)/100);
+           System.out.println(" Resultado " + valor);
      break;
      case 5:
-         c= a+b;
-           System.out.println(a=a+ (a*20)/100);
-           System.out.println(" Resultado " + c);
+         valor= cinco + quant;
+           System.out.println(valor+ (valor*20)/100);
+           System.out.println(" Resultado " + valor);
      break;
      
      default:
